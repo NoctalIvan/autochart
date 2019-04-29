@@ -48,7 +48,7 @@ const getChartData = (input) => {
         })
     })
 
-    return data = {
+    return {
         labels,
         datasets
     }
