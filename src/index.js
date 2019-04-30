@@ -36,6 +36,7 @@ const getChartData = (input) => {
                 label: dataItemKey,
                 backgroundColor: backgroundColors[index%backgroundColors.length],
                 borderColor: borderColors[index%borderColors.length],
+                lineTension: 0,
                 data: []
             })
         })
