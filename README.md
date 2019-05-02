@@ -34,7 +34,7 @@ autochart.pie(data)
 autochart.polarArea(data)
 ```
 
-`data` can be either an object or an array :
+`data` can be either an object or an array, in one or two dimensions :
 
 ```javascript
 const objectChart = autochart.bar({
@@ -73,10 +73,7 @@ const objectChart = autochart.bar({
 ```
 
 ```javascript
-const arrayChart = autoChart.bar([
-    [1,2],
-    [2,3]
-])
+const arrayChart = autoChart.bar([1, 2])
 
 /* Returns */
 {
@@ -84,7 +81,6 @@ const arrayChart = autoChart.bar([
     data: {
         labels: [
             "0",
-            "1"
         ],
         datasets: [
             {
@@ -93,14 +89,6 @@ const arrayChart = autoChart.bar([
                 data: [
                     1,
                     2
-                ]
-            },
-            {
-                label: "1",
-                backgroundColor: "#2196F3",
-                data: [
-                    2,
-                    3
                 ]
             }
         ]

@@ -85,4 +85,17 @@ describe('graph making', () => {
             }
         })
     })
+
+    it('one dim', () => {
+        const g1 = autograph.line([
+            1,
+            2
+        ])
+        const g2 = autograph.line([
+            [1],
+            [2]
+        ])
+        
+        assert.deepEqual(g1,g2)
+    })
 })

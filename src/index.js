@@ -30,7 +30,8 @@ const getChartData = (input) => {
 
     for(const key in input) {
         labels.push(key)
-        Object.keys(input[key]).forEach((dataItemKey, index) => {
+        const content = typeof(input[key]) === typeof({}) ? input[key] : [input[key]]
+        Object.keys(content).forEach((dataItemKey, index) => {
             if(!datasets.find(a => a.label === dataItemKey))
             datasets.push({
                 label: dataItemKey,
@@ -42,10 +43,10 @@ const getChartData = (input) => {
         })
     }
     
-    labels.forEach((label, index) => {
+    labels.forEach((label) => {
         datasets.forEach(dataset => {
             const labelData = input[label]
-            dataset.data.push(labelData[dataset.label])
+            dataset.data.push(labelData[dataset.label] || labelData)
         })
     })
 
