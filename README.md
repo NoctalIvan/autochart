@@ -4,7 +4,7 @@ Ever wanted to create a very simple GraphJs chart in seconds chart in seconds to
 
 AutoChart is a minimalistic no-dependances package which can accept both objects and array data structure to create a simple graph for you to see.
 
-NodeJS users, you might want to try out [quickChart]("https://www.npmjs.com/package/quickchart") to visualize autochart data inside a browser.
+NodeJS users, you might want to try out [quickChart](https://www.npmjs.com/package/quickchart) to visualize autochart data inside a browser.
 
 The available chart types are `bar`, `line`, `radar`, `doughnut`, `pie` and `polarArea`.
 
